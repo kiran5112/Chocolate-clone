@@ -1,0 +1,448 @@
+body {
+    color: rgb(147, 98, 34);
+    font-style: italic;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    cursor: pointer;
+    list-style: none;
+    padding: 15px;
+    margin-left: 20px;
+
+}
+
+li {
+    font-size: 25px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+option {
+    padding: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.img1 {
+    height: 150px;
+    width: 220px;
+}
+
+.inputs {
+    width: 450px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+
+}
+
+select {
+    text-decoration: none;
+    outline-style: hidden;
+    border-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.carousel {
+    width: 1100px;
+    height: 1100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image:first-child {
+    opacity: 1;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    53.33% {
+        opacity: 0;
+    }
+}
+
+.carousel-image:nth-child(2) {
+    animation: imageAnimation 10s infinite;
+}
+
+.carousel-image:nth-child(3) {
+    animation: imageAnimation 10s infinite;
+    animation-delay: 5s;
+}
+
+/*-------------------------------------------------  */
+
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.5s ease-in;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .slide:not(:first-child) {
+    transform: translateX(100%);
+}
+
+.spann {
+    padding: 5px;
+}
+
+.aside {
+    width: 360px;
+    border: 1px burlywood solid;
+
+}
+
+h2,
+h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+hr {
+    padding: 40px;
+}
+
+
+.aside li {
+    border-bottom: 2px gray solid;
+    list-style: none;
+    margin: 26px;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.photo img {
+    width: 360px;
+    height: 350px;
+
+
+    /* border-bottom: 1px grey solid; */
+}
+
+
+.photo span {
+    position: absolute;
+    color: black;
+    font-size: 30px;
+}
+
+.center {
+    text-align: center;
+    /* position: absolute; */
+    left: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
+.center button {
+    width: 200px;
+    padding: 15px;
+    background-color: bisque;
+
+
+}
+
+.center button:hover {
+    border: 2px burlywood solid;
+    color: brown;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+.container img {
+    padding: auto;
+    height: 200px;
+    width: 200px;
+}
+
+img {
+    transition: 3s;
+
+
+}
+
+img:hover {
+    border: 1px burlywood solid;
+    transform: scale(1.3);
+
+}
+
+.special {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(242, 236, 230);
+    padding: 60px;
+}
+
+.cont image {
+    width: 90%;
+    height: auto;
+}
+
+
+.cl img {
+    width: 520px;
+    height: 540px;
+    /* padding: 60px; */
+    /* border: 3px brown solid; */
+    border-radius: 12px;
+    background-color: burlywood;
+
+}
+.carousel {
+    width: 100%;
+    height: auto;
+    /* overflow: hidden;
+    position: relative; */
+}
+
+
+
+.ss {
+    width: 500px;
+    font-size: 22px;
+    font-style: italic;
+    color: rgb(229, 124, 124);
+    padding: 22px;
+    word-spacing: 4px;
+}
+
+.ss button {
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: coral;
+
+
+}
+
+.ss button:hover {
+    border: 2px skyblue;
+    background-color: brown;
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    /* background-color: gray; */
+    /* padding: 60px; */
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    list-style: none;
+    color: black;
+    padding: 30px;
+}
+
+.fon {
+    display: flex;
+    flex-direction: column;
+    font-style: oblique;
+
+
+
+}
+
+.fon li::first-letter {
+    font-size: 30px;
+    color: firebrick;
+    font-style: italic;
+    padding: 15px;
+}
+
+.ss li {
+    font-size: 15px;
+    list-style: none;
+    padding: 22px;
+
+}
+
+.cl li {
+    font-size: 15px;
+    list-style: none;
+    padding: 22px;
+
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 12px;
+        line-height: 50%;
+    }
+
+    h2 {
+        font-size: 10px;
+        line-height: 50%;
+        padding: 5px;
+
+    }
+
+
+    .main {
+        padding: 5px;
+        margin-left: 0px;
+        bottom: 0;
+
+    }
+
+    .inputs {
+        width: 100px;
+        position: unset;
+        top: 30%;
+        left: 30%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ss {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        font-style: italic;
+        /* padding: 12px; */
+        word-spacing: 2px;
+    }
+
+    .ss img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cl img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cont {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .foot {
+        padding: 5px;
+        font-size: 12px;
+        line-height: 50px;
+
+    }
+
+    .ss button {
+        width: 70px;
+        padding: 5px;
+    }
+
+    .container img {
+        padding: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .aside {
+        width: 150px;
+        height: auto;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 7px;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        font-size: 10px;
+        padding: 0;
+        margin: 0%;
+
+    }
+
+    .img1 {
+        height: auto;
+        width: 100%;
+    }
+
+
+}
